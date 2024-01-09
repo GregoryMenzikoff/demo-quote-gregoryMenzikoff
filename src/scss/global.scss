@@ -27,3 +27,72 @@ a {
     transform: scale(1);
   }
 }
+
+.page {
+  background-image: url(../../docs/background.jpg);
+  display: flex;
+  flex-direction: row;
+  min-height: 100vw;
+
+}
+
+.menu {
+  background-color: rgb(54, 30, 114) ;
+
+  display: flex;
+  align-items: center;
+  width: 15%;
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
+    width: 100%;
+  }
+
+  &__item {
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    border-top: 1px solid white;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, .5);
+    }
+    
+  }
+}
+
+.content {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ width: 100%;
+
+ &__box {
+  border: 2px solid blue;
+  width: 38rem;
+  padding: 2rem 1rem;
+ }
+
+ &__quote  {
+  font-size: 2rem;
+  padding-top: 0.8rem;
+  font-family: "Amita";
+}
+
+&__author {
+  display: flex;
+  justify-content: flex-end;
+}
+
+&__action {
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  background-color: rgba(255, 255, 255, .3);
+}
+}
+
+
